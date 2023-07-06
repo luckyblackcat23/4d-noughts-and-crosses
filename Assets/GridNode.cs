@@ -12,7 +12,7 @@ public class GridNode : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if(GameManager.Noughts.Contains(pos) || GameManager.Crosses.Contains(pos))
+        if(!GameManager.Noughts.Contains(pos) || !GameManager.Crosses.Contains(pos))
         {
             if (turn)
             {

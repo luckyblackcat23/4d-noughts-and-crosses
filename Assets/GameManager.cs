@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static Vector4 GameArea;
-    public static List<Vector4> Noughts, Crosses, temp;
-    public static int WinLength = 3;
+    public Vector4 GameArea;
+    public List<Vector4> Noughts, Crosses, Unplayable;
+    public int WinLength;
+    public static GameManager gameManager;
     public int NoughtPoints, CrossesPoints;
 
-    private void Start()
+    private void Awake()
     {
+        gameManager = this;
         StartTurn();
-        
     }
 
     void StartTurn()

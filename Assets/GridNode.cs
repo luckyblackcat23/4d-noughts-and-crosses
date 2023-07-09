@@ -9,31 +9,55 @@ public class GridNode : MonoBehaviour
     //false = noughts
     //true = crosses
     public bool turn;
+    public bool occupied;
 
-    private void OnMouseUp()
+    private void OnMouseEnter()
     {
-        if(!GameManager.Noughts.Contains(pos) || !GameManager.Crosses.Contains(pos))
+        if (!turn)
         {
-            if (turn)
+            nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
+            nought.SetActive(true);
+        }
+        else
+        {
+            cross.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
+            cross.SetActive(true);
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!turn)
             {
-                nought.SetActive(true);
-                GameManager.Noughts.Add(pos);
+                if (!GameManager.gameManager.Noughts.Contains(pos) || !GameManager.gameManager.Crosses.Contains(pos))
+                {
+                    nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                    nought.SetActive(true);
+                    GameManager.gameManager.Noughts.Add(pos);
+                    occupied = true;
+                }
             }
             else
             {
-                cross.SetActive(true);
-                GameManager.Crosses.Add(pos);
+                if (!GameManager.gameManager.Noughts.Contains(pos) || !GameManager.gameManager.Crosses.Contains(pos))
+                {
+                    cross.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
+                    cross.SetActive(true);
+                    GameManager.gameManager.Crosses.Add(pos);
+                    occupied = true;
+                }
             }
         }
     }
 
-    private void OnMouseEnter()
-    {
-        
-    }
-
     private void OnMouseExit()
     {
-        
+        if (!occupied)
+        {
+            nought.SetActive(false);
+            cross.SetActive(false);
+        }
     }
 }

@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
     private int LineLengthCrosses;
     void EndTurn()
     {
+        NoughtPoints = 0;
+        CrossesPoints = 0;
+
         #region diagonal win
         #region 2d Diagonal
         //check for diagonal win

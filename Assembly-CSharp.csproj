@@ -59,6 +59,7 @@
     <Compile Include="Assets\GridGenerator.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\GridNode.cs" />
+    <Compile Include="Assets\EnemyAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

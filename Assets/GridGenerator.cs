@@ -28,7 +28,8 @@ public class GridGenerator : MonoBehaviour
                             Node.GetComponent<GridNode>().cross = Instantiate(Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
                             Node.GetComponent<GridNode>().nought.SetActive(false);
                             Node.GetComponent<GridNode>().cross.SetActive(false);
-                            Node.GetComponent<GridNode>().pos = new Vector4(i, ii);
+                            //i spent 2 days trying to figure why the enemy AI wasnt working only to realise its because i forgot to add iii and iiii to the line below, shame on you past me
+                            Node.GetComponent<GridNode>().pos = new Vector4(i, ii, iii, iiii);
 
                             int sides = 0;
                             if (!GameManager.gameManager.Unplayable.Contains(new Vector4(i + 1, ii, iii, iiii)))

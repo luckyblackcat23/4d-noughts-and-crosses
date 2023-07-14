@@ -8,7 +8,7 @@ public class GridNode : MonoBehaviour
     public GameObject nought, cross;
     //false = noughts
     //true = crosses
-    public bool turn;
+    public static bool turn;
     public bool occupied;
 
     private void OnMouseEnter()
@@ -37,9 +37,10 @@ public class GridNode : MonoBehaviour
                     nought.SetActive(true);
                     GameManager.gameManager.Noughts.Add(pos);
                     occupied = true;
+                    turn = true;
                 }
             }
-            else
+            /*else
             {
                 if (!GameManager.gameManager.Noughts.Contains(pos) || !GameManager.gameManager.Crosses.Contains(pos))
                 {
@@ -48,7 +49,7 @@ public class GridNode : MonoBehaviour
                     GameManager.gameManager.Crosses.Add(pos);
                     occupied = true;
                 }
-            }
+            }*/
         }
     }
 

@@ -349,6 +349,18 @@ public class EnemyAI : MonoBehaviour
                                 }
                             }
 
+                            //### ### ##O
+                            //### ### ###
+                            //### ### ###
+
+                            //### ### ###
+                            //### #X# ###
+                            //### ### ###
+
+                            //### ### ###
+                            //### ### ###
+                            //O## ### ###
+
                             //ok this is getting confusing even for me now, im just going to go back to swapping your + and - around O_o
                             if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii - 1, iii - 1, iiii - 1)))
                             {

@@ -223,7 +223,7 @@ public class EnemyAI : MonoBehaviour
                             //### ### ###
 
                             //### ### ###
-                            //#0# ### ###
+                            //#O# ### ###
                             //### ### ###
 
                             //### ### ###
@@ -244,6 +244,7 @@ public class EnemyAI : MonoBehaviour
                                     }
                                 }
                             }
+
                             //##O
                             //#X#
                             //O##
@@ -261,12 +262,198 @@ public class EnemyAI : MonoBehaviour
                                 }
                             }
 
+                            //O##
+                            //#X#
+                            //##O
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii - 1, iii, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii + 1, iii, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //##X
+                            //#O#
+                            //O##
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 2, ii - 2, iii, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii - 1, iii, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //X##
+                            //#O#
+                            //##O
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii - 1, iii, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 2, ii - 2, iii, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //##O
+                            //#O#
+                            //X##
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii + 1, iii, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 2, ii + 2, iii, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //O##
+                            //#O#
+                            //##X
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii + 1, iii, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 2, ii + 2, iii, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //### ### ###
+                            //O## #X# ##O
+                            //### ### ###
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii, iii + 1, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii, iii - 1, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //### ### ###
+                            //##O #X# O##
+                            //### ### ###
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii, iii - 1, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii, iii + 1, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //### #O# ###
+                            //### ### ###
+                            //### ### ###
+
+                            //### ### ###
+                            //### #X# ###
+                            //### ### ###
+
+                            //### ### ###
+                            //### ### ###
+                            //### #O# ###
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii + 1, iii, iiii + 1)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii - 1, iii, iiii - 1)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //### ### ###
+                            //### ### ###
+                            //### #O# ###
+
+                            //### ### ###
+                            //### #X# ###
+                            //### ### ###
+
+                            //### #O# ###
+                            //### ### ###
+                            //### ### ###
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii + 1, iii, iiii - 1)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii - 1, iii, iiii + 1)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
                             //### ### #O#
                             //### #X# ###
                             //#O# ### ###
                             if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii + 1, iii + 1, iiii)))
                             {
                                 if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii - 1, iii - 1, iiii)))
+                                {
+                                    if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
+                                    {
+                                        Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        GridNode.turn = false;
+                                        goto EndTurn;
+                                    }
+                                }
+                            }
+
+                            //#O# ### ###
+                            //### #X# ###
+                            //### ### #O#
+                            if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii + 1, iii - 1, iiii)))
+                            {
+                                if (GameManager.gameManager.Noughts.Contains(new Vector4(i, ii - 1, iii + 1, iiii)))
                                 {
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
@@ -348,7 +535,6 @@ public class EnemyAI : MonoBehaviour
                                     }
                                 }
                             }
-                            // note
                             //### ### ##O
                             //### ### ###
                             //### ### ###
@@ -375,7 +561,6 @@ public class EnemyAI : MonoBehaviour
                                     }
                                 }
                             }
-
 
                             //O## ### ###
                             //### ### ###
@@ -551,8 +736,6 @@ public class EnemyAI : MonoBehaviour
                                     }
                                 }
                             }
-                            //note2
-
 
                             //O## ### ###
                             //### ### ###

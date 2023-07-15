@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 85178431}
   - component: {fileID: 85178430}
   - component: {fileID: 85178429}
+  - component: {fileID: 85178432}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -156,7 +157,11 @@ MonoBehaviour:
   GameArea: {x: 3, y: 3, z: 3, w: 3}
   Noughts: []
   Crosses: []
-  Unplayable: []
+  Unplayable:
+  - {x: 2, y: 1, z: 2, w: 0}
+  - {x: 1, y: 2, z: 1, w: 1}
+  - {x: 0, y: 2, z: 2, w: 2}
+  - {x: 2, y: 2, z: 2, w: 2}
   WinLength: 2
   NoughtPoints: 0
   CrossesPoints: 0
@@ -191,6 +196,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &85178432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85178428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268120ada524d684e90d959b343341f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1870474877
 GameObject:
   m_ObjectHideFlags: 0

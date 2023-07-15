@@ -11,21 +11,19 @@ public class GridNode : MonoBehaviour
     public static bool turn;
     public bool occupied;
 
-    private void OnMouseEnter()
-    {
-
-    }
-
     private void OnMouseOver()
     {
-        nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
-        nought.SetActive(true);
+        if (!GameManager.gameManager.Noughts.Contains(pos) && !GameManager.gameManager.Crosses.Contains(pos))
+        {
+            nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
+            nought.SetActive(true);
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
             if (!turn)
             {
-                if (!GameManager.gameManager.Noughts.Contains(pos) || !GameManager.gameManager.Crosses.Contains(pos))
+                if (!GameManager.gameManager.Noughts.Contains(pos) && !GameManager.gameManager.Crosses.Contains(pos))
                 {
                     nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 255);
                     nought.SetActive(true);

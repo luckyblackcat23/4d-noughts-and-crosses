@@ -552,17 +552,17 @@ public class EnemyAI : MonoBehaviour
                                 }
                             }
 
-                            //### ### ###
-                            //### ### ###
                             //### ### O##
+                            //### ### ###
+                            //### ### ###
 
                             //### ### ###
                             //### #X# ###
                             //### ### ###
 
+                            //### ### ###
+                            //### ### ###
                             //##O ### ###
-                            //### ### ###
-                            //### ### ###
                             if (GameManager.gameManager.Noughts.Contains(new Vector4(i - 1, ii + 1, iii + 1, iiii + 1)))
                             {
                                 if (GameManager.gameManager.Noughts.Contains(new Vector4(i + 1, ii - 1, iii - 1, iiii - 1)))

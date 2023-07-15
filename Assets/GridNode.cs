@@ -13,20 +13,14 @@ public class GridNode : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (!turn)
-        {
-            nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
-            nought.SetActive(true);
-        }
-        else
-        {
-            cross.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
-            cross.SetActive(true);
-        }
+
     }
 
     private void OnMouseOver()
     {
+        nought.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 10);
+        nought.SetActive(true);
+
         if (Input.GetMouseButtonDown(0))
         {
             if (!turn)

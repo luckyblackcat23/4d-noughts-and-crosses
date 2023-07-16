@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     private int LineLengthNoughts;
     private int LineLengthCrosses;
-    void EndTurn()
+    public void EndTurn()
     {
         NoughtPoints = 0;
         CrossesPoints = 0;

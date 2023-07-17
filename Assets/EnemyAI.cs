@@ -1401,7 +1401,7 @@ public class EnemyAI : MonoBehaviour
             if (!GameManager.gameManager.Noughts.Contains(pos) && !GameManager.gameManager.Crosses.Contains(pos) && !GameManager.gameManager.Unplayable.Contains(pos))
             {
                 //Instantiate(GridGenerator.Cross, new Vector2(pos.x - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (pos.z - (GameManager.gameManager.GameArea.z - 1) / 2)), pos.y - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (pos.w - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
-                GameManager.gameManager.Crosses.Add(pos);
+                //GameManager.gameManager.Crosses.Add(pos);
                 GridNode.turn = false;
             }
         }

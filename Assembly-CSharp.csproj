@@ -60,6 +60,8 @@
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\GridNode.cs" />
     <Compile Include="Assets\EnemyAI.cs" />
+    <Compile Include="Assets\Object.cs" />
+    <Compile Include="Assets\Deck.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

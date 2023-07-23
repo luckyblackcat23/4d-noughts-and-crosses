@@ -29,20 +29,19 @@ public class GridGenerator : MonoBehaviour
                             Node.GetComponent<GridNode>().nought.SetActive(false);
                             Node.GetComponent<GridNode>().cross.SetActive(false);
                             //i spent 2 days trying to figure why the enemy AI wasnt working only to realise its because i forgot to add iii and iiii to the line below, shame on you past me
+                            //                                                     ii   ii
                             Node.GetComponent<GridNode>().pos = new Vector4(i, ii, iii, iiii);
 
                             int sides = 0;
                             if (!GameManager.gameManager.Unplayable.Contains(new Vector4(i + 1, ii, iii, iiii)))
                             {
-                                GameObject gridline = Instantiate(GridLine, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 1, ii - GameManager.gameManager.GameArea.y / 2 + 0.5f), Quaternion.Euler(0, 0, 90));
-                                gridline.transform.position = new Vector2(gridline.transform.position.x + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), gridline.transform.position.y + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2));
+                                GameObject gridline = Instantiate(GridLine, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 1 + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), Quaternion.Euler(0, 0, 90));
                                 sides++;
                             }
 
                             if (!GameManager.gameManager.Unplayable.Contains(new Vector4(i - 1, ii, iii, iiii)))
                             {
-                                GameObject gridline = Instantiate(GridLine, new Vector2(i - GameManager.gameManager.GameArea.x / 2, ii - GameManager.gameManager.GameArea.y / 2 + 0.5f), Quaternion.Euler(0, 0, 90));
-                                gridline.transform.position = new Vector2(gridline.transform.position.x + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), gridline.transform.position.y + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2));
+                                GameObject gridline = Instantiate(GridLine, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), Quaternion.Euler(0, 0, 90));
                                 sides++;
                             }
 

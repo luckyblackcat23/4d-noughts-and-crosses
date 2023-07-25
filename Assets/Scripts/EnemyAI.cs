@@ -2798,4 +2798,4 @@ public class EnemyAI : MonoBehaviour
 //X#O
 //XX#<X
 //O##<X win either way >:O
-//(i rage quit because i was forced into losing by myself, man i suck at noughts and crosses :< )
+//(i rage quit because i was forced into losing by myself, man i suck at noughts and crosses :<  )

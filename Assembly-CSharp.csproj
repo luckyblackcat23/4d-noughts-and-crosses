@@ -59,11 +59,11 @@
     <Compile Include="Assets\Scripts\ObjectSettings.cs" />
     <Compile Include="Assets\Scripts\GridGenerator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Objects\Stick.cs" />
+    <Compile Include="Assets\Scripts\MapManager.cs" />
     <Compile Include="Assets\Scripts\GridNode.cs" />
     <Compile Include="Assets\Scripts\Deck.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
-    <Compile Include="Assets\Scripts\Objects\Stick.cs" />
-    <Compile Include="Assets\Scripts\MapManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

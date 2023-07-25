@@ -246,6 +246,10 @@ MonoBehaviour:
   WinLength: 2
   NoughtPoints: 0
   CrossesPoints: 0
+  TempNoughtPoints: 0
+  TempCrossesPoints: 0
+  PlayerHealth: 0
+  EnemyHealth: 0
 --- !u!4 &1857889189
 Transform:
   m_ObjectHideFlags: 0

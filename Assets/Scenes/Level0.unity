@@ -158,9 +158,11 @@ MonoBehaviour:
   Noughts: []
   Crosses: []
   Unplayable: []
-  WinLength: 2
+  WinLength: 3
   NoughtPoints: 0
   CrossesPoints: 0
+  PlayerHealth: 0
+  EnemyHealth: 0
 --- !u!114 &85178430
 MonoBehaviour:
   m_ObjectHideFlags: 0

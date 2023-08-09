@@ -946,7 +946,7 @@ public class EnemyAI : MonoBehaviour
 
                             //### ### ###
                             //### ### ###
-                            //### x## ###
+                            //### X## ###
                             if (GameManager.gameManager.Crosses.Contains(new Vector4(i - 1, ii - 1, iii, iiii - 1)))
                             {
                                 if (GameManager.gameManager.Crosses.Contains(new Vector4(i + 1, ii + 1, iii, iiii + 1)))

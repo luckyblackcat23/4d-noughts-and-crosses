@@ -7,6 +7,22 @@ public class GridGenerator : MonoBehaviour
     public static GameObject Nought, Cross;
     public GameObject nought, cross, GridLine;
 
+    public void ClearGrid()
+    {
+        foreach(GridNode gridNode in GameObject.FindObjectsOfType<GridNode>())
+        {
+            gridNode.nought.SetActive(false);
+            gridNode.cross.SetActive(false);
+            gridNode.occupied = false;
+        }
+
+        GameManager.gameManager.Noughts.Clear();
+        GameManager.gameManager.Crosses.Clear();
+
+        GameManager.gameManager.NoughtPoints = 0;
+        GameManager.gameManager.CrossesPoints = 0;
+    }
+
     public void Start()
     {
         GridSquare = gridSqaure;

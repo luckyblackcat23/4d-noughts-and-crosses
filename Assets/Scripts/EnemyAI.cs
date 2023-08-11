@@ -4077,3 +4077,4 @@ public class EnemyAI : MonoBehaviour
 
 //ok future jordan here, im now realising i could've just copy and pasted the GameManagers code and it would've worked relatively the same with way less lines of code :(
 //ok future future jordan here, im now realising i couldnt of copy and pasted the GameManager because thats even more broken than this :(
+//ok future future future jordan here, im now realising i have fixed the game manager and i could still of swapped the enemy AI around to use this method, but that would take too long :(

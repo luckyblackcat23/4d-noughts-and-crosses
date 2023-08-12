@@ -26,6 +26,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -41,6 +42,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -56,6 +58,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -73,6 +76,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -90,6 +94,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -107,6 +112,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -125,6 +131,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -142,6 +149,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -159,6 +167,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -176,6 +185,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -193,6 +203,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -210,6 +221,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -227,6 +239,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -244,6 +257,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -262,6 +276,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -279,6 +294,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -296,6 +312,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -313,6 +330,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -330,6 +348,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -347,6 +366,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -364,6 +384,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -381,6 +402,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -398,6 +420,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -415,6 +438,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -432,6 +456,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -449,6 +474,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -466,6 +492,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -483,6 +510,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -500,6 +528,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -519,6 +548,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -546,6 +576,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -573,6 +604,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -602,6 +634,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion()); //thats right, you thought this was a useful comment, but no IT WAS ME, DIO
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -629,6 +662,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -654,6 +688,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -679,6 +714,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -704,6 +740,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -729,6 +766,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -754,6 +792,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -779,6 +818,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -804,6 +844,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -829,6 +870,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -854,6 +896,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -879,6 +922,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -904,6 +948,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -929,6 +974,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -954,6 +1000,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -979,6 +1026,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1004,6 +1052,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1029,6 +1078,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1054,6 +1104,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1079,6 +1130,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1104,6 +1156,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1129,6 +1182,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1154,6 +1208,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1179,6 +1234,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1204,6 +1260,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1230,6 +1287,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1257,6 +1315,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion()); //thats right, you thought this was a useful comment, but no IT WAS ME, ZOIDBERG
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1283,6 +1342,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1310,6 +1370,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1336,6 +1397,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1363,6 +1425,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1389,6 +1452,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1414,6 +1478,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1439,6 +1504,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1464,6 +1530,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1489,6 +1556,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1514,6 +1582,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1539,6 +1608,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1564,6 +1634,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1589,6 +1660,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1614,6 +1686,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1639,6 +1712,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1664,6 +1738,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1689,6 +1764,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1714,6 +1790,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1739,6 +1816,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1764,6 +1842,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1789,6 +1868,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1814,6 +1894,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1839,6 +1920,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1864,6 +1946,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1889,6 +1972,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1914,6 +1998,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1939,6 +2024,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1964,6 +2050,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -1989,6 +2076,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2012,6 +2100,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2027,6 +2116,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2042,6 +2132,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2059,6 +2150,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2076,6 +2168,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2093,6 +2186,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2111,6 +2205,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2128,6 +2223,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2145,6 +2241,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2162,6 +2259,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2179,6 +2277,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2196,6 +2295,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2213,6 +2313,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2230,6 +2331,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2248,6 +2350,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2265,6 +2368,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2282,6 +2386,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2299,6 +2404,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2316,6 +2422,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2333,6 +2440,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2350,6 +2458,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2367,6 +2476,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2384,6 +2494,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2401,6 +2512,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2418,6 +2530,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2435,6 +2548,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2452,6 +2566,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2469,6 +2584,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2486,6 +2602,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2505,6 +2622,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2532,6 +2650,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2559,6 +2678,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2588,6 +2708,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion()); //thats right, you thought this was a useful comment, but no IT WAS ME, DIO
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2613,6 +2734,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2638,6 +2760,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2663,6 +2786,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2688,6 +2812,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2713,6 +2838,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2738,6 +2864,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2763,6 +2890,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2788,6 +2916,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2813,6 +2942,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2838,6 +2968,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2863,6 +2994,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2888,6 +3020,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2913,6 +3046,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2938,6 +3072,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2963,6 +3098,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -2988,6 +3124,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3013,6 +3150,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3038,6 +3176,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3063,6 +3202,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3088,6 +3228,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3113,6 +3254,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3138,6 +3280,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3163,6 +3306,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3188,6 +3332,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3213,6 +3358,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3238,6 +3384,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3263,6 +3410,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3289,6 +3437,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3316,6 +3465,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion()); //thats right, you thought this was a useful comment, but no IT WAS ME, ZOIDBERG
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3342,6 +3492,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3369,6 +3520,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3395,6 +3547,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3422,6 +3575,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3448,6 +3602,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3473,6 +3628,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3498,6 +3654,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3523,6 +3680,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3548,6 +3706,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3573,6 +3732,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3598,6 +3758,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3623,6 +3784,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3648,6 +3810,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3673,6 +3836,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3698,6 +3862,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3723,6 +3888,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3748,6 +3914,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3773,6 +3940,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3798,6 +3966,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3823,6 +3992,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3848,6 +4018,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3874,6 +4045,7 @@ public class EnemyAI : MonoBehaviour
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GridNode.turn = false;
                                         goto EndTurn;
                                     }
@@ -3898,6 +4070,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3923,6 +4096,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3948,6 +4122,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3973,6 +4148,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -3998,6 +4174,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -4023,6 +4200,7 @@ public class EnemyAI : MonoBehaviour
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -4047,8 +4225,8 @@ public class EnemyAI : MonoBehaviour
                                 {
                                     if (!GameManager.gameManager.Crosses.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Unplayable.Contains(new Vector4(i, ii, iii, iiii)) && !GameManager.gameManager.Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                                     {
-
                                         FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).cross = Instantiate(GridGenerator.Cross, new Vector2(i - GameManager.gameManager.GameArea.x / 2 + 0.5f + ((GameManager.gameManager.GameArea.x + 1) * (iii - (GameManager.gameManager.GameArea.z - 1) / 2)), ii - GameManager.gameManager.GameArea.y / 2 + 0.5f + (GameManager.gameManager.GameArea.y + 1) * (iiii - (GameManager.gameManager.GameArea.w - 1) / 2)), new Quaternion());
+                                        FindGridNodeAtPosition(new Vector4(i, ii, iii, iiii)).occupied = true;
                                         GameManager.gameManager.Crosses.Add(new Vector4(i, ii, iii, iiii));
                                         GridNode.turn = false;
                                         goto EndTurn;
@@ -4092,4 +4270,4 @@ public class EnemyAI : MonoBehaviour
 //ok future jordan here, im now realising i could've just copy and pasted the GameManagers code and it would've worked relatively the same with way less lines of code :(
 //ok future future jordan here, im now realising i couldnt of copy and pasted the GameManager because thats even more broken than this :(
 //ok future future future jordan here, im now realising i have fixed the game manager and i could still of swapped the enemy AI around to use this method, but that would take too long :(
-//ok future future future future jordan here, im nor realising i AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH (this whole script doesnt work with different line lengths)
+//ok future future future future jordan here, im now realising i AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH (this whole script doesnt work with different line lengths)

@@ -156,7 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameArea: {x: 3, y: 3, z: 3, w: 1}
-  Noughts: []
+  Noughts:
+  - {x: 0, y: 2, z: 0, w: 0}
+  - {x: 1, y: 1, z: 1, w: 0}
+  - {x: 2, y: 0, z: 2, w: 0}
   Crosses: []
   Unplayable: []
   WinLength: 3

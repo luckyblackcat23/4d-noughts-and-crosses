@@ -47,7 +47,7 @@ public class GridNode : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (!occupied)
+        if (!occupied && !GameManager.gameManager.Noughts.Contains(pos) && !GameManager.gameManager.Crosses.Contains(pos))
         {
             nought.SetActive(false);
             cross.SetActive(false);

@@ -159,15 +159,7 @@ MonoBehaviour:
   Noughts: []
   Crosses: []
   Unplayable:
-  - {x: 1, y: 1, z: 0, w: 0}
-  - {x: 1, y: 1, z: 1, w: 0}
-  - {x: 1, y: 1, z: 2, w: 0}
   - {x: 1, y: 1, z: 1, w: 1}
-  - {x: 1, y: 1, z: 2, w: 1}
-  - {x: 1, y: 1, z: 2, w: 2}
-  - {x: 1, y: 1, z: 0, w: 1}
-  - {x: 1, y: 1, z: 0, w: 2}
-  - {x: 1, y: 1, z: 1, w: 2}
   WinLength: 3
   NoughtPoints: 0
   CrossesPoints: 0

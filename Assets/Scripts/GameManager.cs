@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Vector4 GameArea;
-    public List<Vector4> Noughts, Crosses, Unplayable;
+    public List<Vector4> Noughts, Crosses, Unplayable, Temp;
     public int WinLength;
     public static GameManager gameManager;
     public int NoughtPoints, CrossesPoints;
@@ -1993,14 +1993,19 @@ public class GameManager : MonoBehaviour
                         if (Crosses.Contains(new Vector4(i, ii, iii, iiii)))
                         {
                             LineLengthCrosses++;
+                            Temp.add(New Vector4(i, ii, iii, iiii))
                             if (LineLengthCrosses >= WinLength)
                             {
                                 CrossesPoints++;
                                 LineLengthCrosses = 0;
+                                //make all temp positions red (or any other colour if necessary)
                             }
                         }
                         else
+                        {
                             LineLengthCrosses = 0;
+                            Temp.Clear()
+                        }
                     }
                     LineLengthNoughts = 0;
                     LineLengthCrosses = 0;
@@ -2011,12 +2016,12 @@ public class GameManager : MonoBehaviour
 
         if (TempNoughtPoints > NoughtPoints)
         {
-
+            //enemy has taken damage, show tiles that did damage as feedback for the player
         }
 
         if (TempCrossesPoints < CrossesPoints)
         {
-
+            //player has taken damage, show tiles that did damage as feedback for the player
         }
 
         if (TempNoughtPoints < NoughtPoints)

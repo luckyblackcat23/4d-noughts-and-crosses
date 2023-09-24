@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Vector4 GameArea;
-    public List<Vector4> Noughts, Crosses, Unplayable, Temp;
+    public List<Vector4> Noughts, Crosses, Unplayable, Temp, Point;
     public int WinLength;
     public static GameManager gameManager;
     public int NoughtPoints, CrossesPoints;
@@ -1981,6 +1981,7 @@ public class GameManager : MonoBehaviour
                         if (Noughts.Contains(new Vector4(i, ii, iii, iiii)))
                         {
                             LineLengthNoughts++;
+                            Temp.Add(new Vector4(i, ii, iii, iiii));
                             if (LineLengthNoughts >= WinLength)
                             {
                                 NoughtPoints++;
@@ -1988,12 +1989,15 @@ public class GameManager : MonoBehaviour
                             }
                         }
                         else
+                        {
                             LineLengthNoughts = 0;
+                            Temp.Clear();
+                        }
 
                         if (Crosses.Contains(new Vector4(i, ii, iii, iiii)))
                         {
                             LineLengthCrosses++;
-                            Temp.add(New Vector4(i, ii, iii, iiii))
+                            Temp.Add(new Vector4(i, ii, iii, iiii));
                             if (LineLengthCrosses >= WinLength)
                             {
                                 CrossesPoints++;
@@ -2004,7 +2008,7 @@ public class GameManager : MonoBehaviour
                         else
                         {
                             LineLengthCrosses = 0;
-                            Temp.Clear()
+                            Temp.Clear();
                         }
                     }
                     LineLengthNoughts = 0;

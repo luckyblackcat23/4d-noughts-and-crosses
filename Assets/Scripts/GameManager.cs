@@ -1790,9 +1790,9 @@ public class GameManager : MonoBehaviour
             LineLengthCrosses = 0;
         }
 
-        for (int offset = 1; offset < GameArea.y; offset++)
+        for (int offset = 1; offset < GameArea.z; offset++)
         {
-            for (int ii = 0; ii < GameArea.y - offset; ii++)
+            for (int ii = 0; ii < GameArea.z - offset; ii++)
             {
                 if (ii < GameArea.x && ii < GameArea.y && ii < GameArea.w)
                 {
@@ -1821,9 +1821,9 @@ public class GameManager : MonoBehaviour
             LineLengthCrosses = 0;
         }
 
-        for (int offset = 0; offset < GameArea.y; offset++)
+        for (int offset = 0; offset < GameArea.w; offset++)
         {
-            for (int ii = 0; ii < GameArea.y - offset; ii++)
+            for (int ii = 0; ii < GameArea.w - offset; ii++)
             {
                 if (ii < GameArea.x && ii < GameArea.y && ii < GameArea.z)
                 {

@@ -155,13 +155,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19698d5ac2005f24382dd5fa62d9d446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameArea: {x: 2, y: 2, z: 4, w: 4}
-  Noughts: []
+  GameArea: {x: 3, y: 3, z: 3, w: 3}
+  Noughts:
+  - {x: 0, y: 0, z: 0, w: 2}
+  - {x: 1, y: 1, z: 1, w: 1}
+  - {x: 2, y: 2, z: 2, w: 0}
   Crosses: []
   Unplayable: []
   Temp: []
   Point: []
-  WinLength: 2
+  WinLength: 3
   NoughtPoints: 0
   CrossesPoints: 0
   TempNoughtPoints: 0

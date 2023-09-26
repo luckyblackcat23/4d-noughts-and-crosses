@@ -1153,7 +1153,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.y; offset++)
+            for (int offset = 0; offset < GameArea.y; offset++)
             {
                 for (int ii = 0; ii < GameArea.y - offset; ii++)
                 {
@@ -1184,7 +1184,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.w; offset++)
+            for (int offset = 0; offset < GameArea.w; offset++)
             {
                 for (int ii = 0; ii < GameArea.w - offset; ii++)
                 {
@@ -1346,7 +1346,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.z; offset++)
+            for (int offset = 0; offset < GameArea.z; offset++)
             {
                 for (int ii = 0; ii < GameArea.z - offset; ii++)
                 {
@@ -1377,7 +1377,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.w; offset++)
+            for (int offset = 0; offset < GameArea.w; offset++)
             {
                 for (int ii = 0; ii < GameArea.w - offset; ii++)
                 {
@@ -1539,7 +1539,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.z; offset++)
+            for (int offset = 0; offset < GameArea.z; offset++)
             {
                 for (int ii = 0; ii < GameArea.z - offset; ii++)
                 {
@@ -1570,7 +1570,7 @@ public class GameManager : MonoBehaviour
                 LineLengthCrosses = 0;
             }
 
-            for (int offset = 1; offset < GameArea.w; offset++)
+            for (int offset = 0; offset < GameArea.w; offset++)
             {
                 for (int ii = 0; ii < GameArea.w - offset; ii++)
                 {
@@ -1759,7 +1759,7 @@ public class GameManager : MonoBehaviour
             LineLengthCrosses = 0;
         }
 
-        for (int offset = 1; offset < GameArea.y; offset++)
+        for (int offset = 0; offset < GameArea.y; offset++)
         {
             for (int ii = 0; ii < GameArea.y - offset; ii++)
             {
@@ -1790,7 +1790,7 @@ public class GameManager : MonoBehaviour
             LineLengthCrosses = 0;
         }
 
-        for (int offset = 1; offset < GameArea.z; offset++)
+        for (int offset = 0; offset < GameArea.z; offset++)
         {
             for (int ii = 0; ii < GameArea.z - offset; ii++)
             {

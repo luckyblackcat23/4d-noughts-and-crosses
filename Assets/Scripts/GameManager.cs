@@ -2021,11 +2021,31 @@ public class GameManager : MonoBehaviour
         if (TempNoughtPoints > NoughtPoints)
         {
             //enemy has taken damage, show tiles that did damage as feedback for the player
+            foreach(Vector4 tile in Point)
+            {
+                foreach(GridNode gridNode in GameObject.FindObjectsOfType<GridNode>())
+                {
+                    if(gridNode.pos == tile)
+                    {
+                        //change the colour of the tile in the gridnode to signify that, that tile was what produced a point
+                    }
+                }
+            }
         }
 
         if (TempCrossesPoints < CrossesPoints)
         {
             //player has taken damage, show tiles that did damage as feedback for the player
+            foreach(Vector4 tile in Point)
+            {
+                foreach(GridNode gridNode in GameObject.FindObjectsOfType<GridNode>())
+                {
+                    if(gridNode.pos == tile)
+                    {
+                        //change the colour of the tile in the gridnode to signify that, that tile was what produced a point
+                    }
+                }
+            }
         }
 
         if (TempNoughtPoints < NoughtPoints)

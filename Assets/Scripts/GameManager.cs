@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
                     LineLengthCrosses = 0;
                 }
 
-                for (int offset = 1; offset < GameArea.y; offset++)
+                for (int offset = 0; offset < GameArea.y; offset++)
                 {
                     for (int ii = 0; ii <= GameArea.y - offset; ii++)
                     {
@@ -1853,6 +1853,7 @@ public class GameManager : MonoBehaviour
         }
         #endregion
         #endregion
+        #region straight line win
         //check for x win
         for (int iiii = 0; iiii < GameArea.w; iiii++)
         {
@@ -2016,7 +2017,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        
+        #endregion
 
         if (TempNoughtPoints > NoughtPoints)
         {

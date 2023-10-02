@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 85178431}
   - component: {fileID: 85178430}
   - component: {fileID: 85178429}
+  - component: {fileID: 85178434}
   - component: {fileID: 85178432}
   - component: {fileID: 85178433}
   m_Layer: 0
@@ -155,12 +156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19698d5ac2005f24382dd5fa62d9d446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameArea: {x: 3, y: 3, z: 3, w: 3}
-  Noughts:
+  GameArea: {x: 4, y: 4, z: 3, w: 3}
+  Noughts: []
+  Crosses:
   - {x: 0, y: 0, z: 0, w: 0}
-  - {x: 0, y: 0, z: 0, w: 1}
-  - {x: 0, y: 0, z: 0, w: 2}
-  Crosses: []
   Unplayable: []
   Temp: []
   Point: []
@@ -209,7 +208,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85178428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 268120ada524d684e90d959b343341f9, type: 3}
   m_Name: 
@@ -224,6 +223,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb5bf6444a6d14e4a803992d75f79f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &85178434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85178428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85aaeced41e2e6e40bedfc7a979201f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &229742963

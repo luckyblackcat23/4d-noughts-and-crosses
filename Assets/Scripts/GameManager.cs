@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
                 //opposite diagonals
                 for (int offset = 0; offset < GameArea.x; offset++)
                 {
-                    for (int ii = 0; ii < GameArea.x - offset; ii++)
+                    for (int ii = 0; ii < GameArea.x; ii++)
                     {
                         if (ii < GameArea.y)
                         {
@@ -134,11 +134,11 @@ public class GameManager : MonoBehaviour
                     LineLengthCrosses = 0;
                 }
 
-                for (int offset = 0; offset < GameArea.y; offset++)
+                for (int offset = 1; offset < GameArea.y; offset++)
                 {
-                    for (int ii = 0; ii <= GameArea.y - offset; ii++)
+                    for (int ii = 0; ii < GameArea.y; ii++)
                     {
-                        if (ii <= GameArea.x)
+                        if (ii < GameArea.x)
                         {
                             if (Noughts.Contains(new Vector4(ii, GameArea.y - (ii + offset), i, iii)))
                             {
@@ -401,9 +401,9 @@ public class GameManager : MonoBehaviour
 
                 for (int offset = 1; offset < GameArea.x; offset++)
                 {
-                    for (int ii = 0; ii <= GameArea.x - offset; ii++)
+                    for (int ii = 0; ii < GameArea.x - offset; ii++)
                     {
-                        if (ii <= GameArea.w)
+                        if (ii < GameArea.w)
                         {
                             if (Noughts.Contains(new Vector4(GameArea.x - (ii + offset), i, iii, ii)))
                             {
@@ -516,7 +516,7 @@ public class GameManager : MonoBehaviour
                             else
                                 LineLengthNoughts = 0;
 
-                            if (Crosses.Contains(new Vector4(i, ii, GameArea.z - (ii + offset), iii)))
+                            if (Crosses.Contains(new Vector4(i, ii, GameArea.z -(ii + offset), iii)))
                             {
                                 LineLengthCrosses++;
                                 if (LineLengthCrosses >= WinLength)
@@ -935,7 +935,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (ii < GameArea.y && ii < GameArea.z)
                     {
-                        if (Noughts.Contains(new Vector4(GameArea.x - 1 -(ii + offset), ii, ii, iiii)))
+                        if (Noughts.Contains(new Vector4(GameArea.x - 1 - (ii + offset), ii, ii, iiii)))
                         {
                             LineLengthNoughts++;
                             if (LineLengthNoughts >= WinLength)
@@ -944,7 +944,7 @@ public class GameManager : MonoBehaviour
                         else
                             LineLengthNoughts = 0;
 
-                        if (Crosses.Contains(new Vector4(GameArea.x - 1 -(ii + offset), ii, ii, iiii)))
+                        if (Crosses.Contains(new Vector4(GameArea.x - 1 - (ii + offset), ii, ii, iiii)))
                         {
                             LineLengthCrosses++;
                             if (LineLengthCrosses >= WinLength)

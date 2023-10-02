@@ -1853,7 +1853,6 @@ public class GameManager : MonoBehaviour
         }
         #endregion
         #endregion
-        #region straight line win
         //check for x win
         for (int iiii = 0; iiii < GameArea.w; iiii++)
         {
@@ -2017,7 +2016,7 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-        #endregion
+        
 
         if (TempNoughtPoints > NoughtPoints)
         {
